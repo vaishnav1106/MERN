@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body>
+    <!-- inline js -->
+    <button onclick="alert('welcome here')">Click Me</button> <!-- here we jsut use alert attribute/property to display a message and 
+    onclick is a method where its used for give a functionalaty to our button -->
+    
+    <!-- internal js -->
+    <p id="first"> Hi user</p>
+    <button id="change" style="color: rgb(217, 243, 68); background-color: blueviolet;">Click Here</button>
+    <script>
+          document.getElementById("change").onclick = function()
+          {
+            // alert('button clicked')
+            document.getElementById("first").innerHTML ="Welcom User!";
+          }
+    </script>
+    
+</body>
+</html>
