@@ -7,18 +7,51 @@
 </head>
 <body>
     <!-- inline js -->
-    <button onclick="alert('welcome here')">Click Me</button> <!-- here we jsut use alert attribute/property to display a message and 
+    <!-- <button onclick="alert('welcome here')">Click Me</button>  -->
+    <!-- here we jsut use alert attribute/property to display a message and 
     onclick is a method where its used for give a functionalaty to our button -->
     
     <!-- internal js -->
-    <p id="first"> Hi user</p>
-    <button id="change" style="color: rgb(217, 243, 68); background-color: blueviolet;">Click Here</button>
+    <!-- <p id="first"> Hi user</p>
+    <button id="change" style="color: rgb(217, 243, 68); background-color: blueviolet;">Click Here</button> -->
+
+
+    <!-- ////////////////////////////////////////// -->
+    <p id="para">JavaScript is Awesome </p>
+    <button id="add">Click Me </button>
+
+
+    <div>
+        <p id="color">hello guys , hope all doing great</p>
+        <button id="click">Chick me</button>
+    </div>
+
     <script>
-          document.getElementById("change").onclick = function()
+        //   document.getElementById("change").onclick = function()
+        //   {
+        //     // alert('button clicked')
+        //     document.getElementById("first").innerHTML ="Welcom User!";
+        //   }
+
+
+
+        // here we are adding some text or paragraph before or at end of the text we have printed while we click on the button which is already implement on the code
+          document.getElementById("add").onclick = function()
           {
-            // alert('button clicked')
-            document.getElementById("first").innerHTML ="Welcom User!";
+            document.getElementById("para").innerHTML = "Is "+ document.getElementById("para").innerHTML ; //here we add some string before the text
+            // document.getElementById("para").innerHTML =  document.getElementById("para").innerHTML+  " awesome "; //here we add the string on back of the text
+                // alert("welcome")
           }
+
+
+
+
+            // manupulating the style using js
+        document.getElementById("click").onclick = function()
+        {
+            document.getElementById("color").style.fontSize="100px";
+        }
+         
     </script>
     
 </body>
