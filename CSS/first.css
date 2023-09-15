@@ -1,0 +1,40 @@
+body
+{
+    background-color: aqua;
+}
+#second
+{
+    background-color: black;
+    color:white;
+}
+/* #second p
+{
+  float: right;
+  background-color: rgb(17, 17, 16);
+} */
+div
+{
+    background-color: aliceblue;
+    font-size: 50px;
+}
+.relative
+{
+    background-color: bisque;
+    position: relative;
+    width: 800px;
+    text-align: center;
+    left: 500px;
+    top: 90px;
+    z-index: 1;
+}
+
+.absolute
+{
+    background-color: rgb(126, 145, 102);
+    position: absolute;
+    width: 800px;
+    text-align: center;
+    left: 500px;
+    z-index: 10;
+    opacity: 0.4;
+}
