@@ -1,0 +1,7 @@
+#shape
+{
+    width:200px;
+    height:200px;
+    background-color: greenyellow;
+    position: relative; /* to move the shape freely in any position */
+}
