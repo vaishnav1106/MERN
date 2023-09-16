@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramdum Number Gussing Game</title>
+</head>
+<body>
+    <h1>Enter Any Number From 1-5</h1>
+   <input id="inp" type="text"> 
+   <button id="btn">Submit</button>
+
+   <script>
+    var userans = 0;
+   
+    var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_-+=[]{}|;:,.<>?";
+    document.getElementById("btn").onclick = function()
+    {
+        userans=document.getElementById("inp").value
+
+        var ans = Math.floor(Math.random()*5) +0;
+       
+        if(userans == ans ||userans == alpha )
+        {
+            alert("user has won !!")
+        }
+        else
+        {
+                alert("try again !!")
+        }
+
+        if(userans == alpha)
+        {
+            alert("only print numbers only")
+        }
+    }
+   </script>
+</body>
+</html>

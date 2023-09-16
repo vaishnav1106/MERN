@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+    <input id="input" type="text">
+    <button id="button">Submit</button>
+    <p id="para">this is para 1</p>
+
+    <!-- varibles -->
+    <script>
+        document.getElementById("button").onclick = function()
+        {
+            
+            var val="";
+            val= document.getElementById("input").value//here we use the code to fetch the value from the text box and prind under the paragraph
+            document.getElementById("para").innerHTML=val
+        }
+    </script>
+</body>
+</html>
