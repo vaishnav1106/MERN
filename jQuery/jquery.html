@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery Detecting A click</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #circle
+        {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        #square
+        {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="square"></div>
+    <div id="square"></div>
+
+    <!-- here we are going to add the jquery to determine the click -->
+    <script>
+        $("#circle").hover(function(){
+            alert("You clicked on circle");
+        });
+
+        $("#square").click(function(){
+            alert("You clicked on Square");
+        });
+
+        // $("div").click(function(){
+        //alert("You clicked on a div")
+        //})
+    </script>
+</body>
+</html>

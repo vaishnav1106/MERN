@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>music js</title>
+</head>
+<body>
+    <!-- Create a button with the ID "click" -->
+    <button id="click">Click Me</button>
+
+    <script>
+        // Create an Audio element and load the 'Violin.mp3' file
+        var audio = new Audio('Violin.mp3');
+        
+        // Initialize a variable to track whether the audio is currently playing
+        var isPlaying = false;
+
+        // Add a click event listener to the button
+        document.getElementById("click").addEventListener("click", function () {
+            // Check if the audio is currently playing
+            if (isPlaying) {
+                // If it's playing, pause the audio
+                audio.pause();
+                // Update the isPlaying variable to indicate that the audio is now paused
+                isPlaying = false;
+                // Update the button text to "Play Music"
+                document.getElementById("click").textContent = "Play Music";
+            } else {
+                // If it's not playing, play the audio
+                audio.play();
+                // Update the isPlaying variable to indicate that the audio is now playing
+                isPlaying = true;
+                // Update the button text to "Pause Music"
+                document.getElementById("click").textContent = "Pause Music";
+            }
+        });
+    </script>
+</body>
+</html>
