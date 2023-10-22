@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate Style Using jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      
+    <style>
+        #circle{
+            background-color: green;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        #square
+        {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="square"></div>
+    <div id="square"></div>
+
+    <script>
+        // here we have manipulate the style of circle
+        // $("#circle").click(function(){
+        //     // alert("clicked the circle")
+        //     $("#circle").css("background-color","grey") 
+        //     $("#circle").css("width","500px")
+        //     $("#circle").css("height","500px") 
+        // });
+
+
+        $("div").click(function(){
+            // here we can see that when we click any symbol all will disappear
+        //    $("div").css("display","none")
+           //  here we can see only the selected symbol will disappear
+          $(this).css("display","none");
+        });
+
+    </script>
+</body>
+</html>
