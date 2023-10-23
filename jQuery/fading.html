@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fading</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p> Here we can fade the sentence
+    </p>
+    <button id="btn">FadeOut</button>
+    <button id="btn1">FadeIn</button>
+    <!-- <script>
+        $("button").click(function(){
+            $("p").fadeOut();
+        });
+    </script> -->
+    <script>
+        $("#btn").click(function(){
+        $("p").fadeOut("slow","swing");
+        });
+
+        $("#btn1").click(function(){
+        $("p").fadeIn();
+        });
+    </script>
+</body>
+</html>
