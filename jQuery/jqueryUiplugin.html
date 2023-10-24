@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Ui</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+   <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+     <!-- <style>
+        #drag
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+
+        #drop
+        {
+            width:500px;
+            height:500px;
+            background-color: aqua;
+        }
+    </style> -->
+    
+   
+</head>
+<body>
+    <!-- draggable and droppable jquery ui -->
+    <!-- <div id="drag"></div>
+    <div id="drop"></div>
+
+    <script>
+        $("#drag").draggable();
+        $("#drop").droppable({
+            drop:function( event, ui) {
+                alert("element dropped");
+            }
+        });
+    </script> -->
+
+
+    <!-- jQuery widget -->
+
+
+    <div id="accordion">
+        <h3>Section1</h3>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Iusto natus veritatis deserunt facere minima eos reprehenderit odio error quaerat. <br>
+                A fugiat libero nesciunt velit, dignissimos blanditiis incidunt nostrum laudantium<br>
+                 possimus dolore ratione cumque quidem suscipit, earum esse. Facilis, aspernatur molestias?<br>
+                </p>
+        </div>
+
+        <h3>Section2</h3>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Iusto natus veritatis deserunt facere minima eos reprehenderit odio error quaerat. <br>
+                A fugiat libero nesciunt velit, dignissimos blanditiis incidunt nostrum laudantium <br>
+                possimus dolore ratione cumque quidem suscipit, earum esse. Facilis, aspernatur molestias?<br>
+            </p>
+        </div>
+
+    </div>
+
+<!-- Date picker Ui plugin -->
+    <p>Date: <input type="text" id="datepicker"></p>
+
+    <script>
+        $("#accordion").accordion();
+        $('#datepicker').datepicker();
+    </script>
+</body>
+</html>
