@@ -44,11 +44,18 @@
         font-size: larger;
     }
     #error{
-
+        color: red;
+        font-size: 10px;
+    }
+    #success
+    {
+        color: greenyellow;
+        font-size: 10px;
     }
 </style> 
 <body>
     <div id="error"></div>
+    <div id="success"></div>
     <div class="container">
         <h1>Registration</h1>
         <form>
@@ -59,9 +66,9 @@
             <label for="phn">Phone :</label>
             <input type="text" id="phn"><br>
             <label for="psd">Password :</label>
-            <input type="text" id="psd"><br>
+            <input type="password" id="psd"><br>
             <label for="con-psd">Confirm-Password :</label>
-            <input type="text" id="con-psd"><br>
+            <input type="password" id="con-psd"><br>
             <button type="button" id="btn"><strong>Submit</strong></button>
         </form>
     </div>
@@ -125,14 +132,10 @@
           
 
           
- if(errormessage == missing)
-           {
-            $("#error").html( missing);
-           }
         //   
         if(errormessage =="")
         {
-            $("#error").html("Yor Are Registered Successfully")
+            $("#success").html("Yor Are Registered Successfully")
         }
         else{
 
